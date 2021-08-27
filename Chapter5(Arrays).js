@@ -170,7 +170,7 @@ findSumBetter([1, 2, 3, 4,5], 9); // [ 4, 3 ]
 function arraySlice(array, beginIndex, endIndex) {
     // If no parameters passed, return the array
     if (!beginIndex && !endIndex) {
-        return array;
+        return Array.from(array);
     }
 
     // If only beginning index is found, set endIndex to size
